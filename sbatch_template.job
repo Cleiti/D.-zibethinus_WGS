@@ -1,0 +1,24 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-3
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH	-t 00:15:00
+#SBATCH -J batchtest
+#SBATCH --qos=short
+
+module load bioinfo-tools
+module load bwa
+
+cp -p /home/juliasul/BigData/uppmax/test2/* $SNIC_TMP/batch_test
+cd $SNIC_TMP/batch_test
+gunzip ref.fa.gz
+bwa -a bwtsw index ref.fa 2> ref_errout.txt
+
+bwa aln ref.fa p1.fq > p1_aln_sa.sai
+bwa aln ref.fa p1.fq > p2_aln_sa.sai
+bwa aln ref.fa p1.fq > p3_aln_sa.sai
+bwa aln ref.fa p1.fq > p4_aln_sa.sai
+bwa aln ref.fa p1.fq > p5_aln_sa.sai
+bwa aln ref.fa p1.fq > p6_aln_sa.sai
+bwa aln ref.fa p1.fq > p7_aln_sa.sai
+bwa aln ref.fa p1.fq > p8_aln_sa.sai
