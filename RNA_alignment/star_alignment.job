@@ -1,0 +1,39 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 10:00:00
+#SBATCH -M snowy
+#SBATCH -J STAR_align
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load star
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc06\
+--runThreadN 10 \
+--readFilesIn /home/juliasul/GenomeAnalysis/data/4_Tean_Teh_2017/transcriptome/trimmed/*_scaffold_06* \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc06/RNA_sc06_aligned\
+--outSAMtype BAM SortedByCoordinate \
+--outSAMunmapped Within \
+--outSAMattributes Standard \
+--readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10\
+--runThreadN 10 \
+--readFilesIn /home/juliasul/GenomeAnalysis/data/4_Tean_Teh_2017/transcriptome/trimmed/*_scaffold_10* \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/RNA_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate \
+--outSAMunmapped Within \
+--outSAMattributes Standard \
+--readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc11\
+--runThreadN 10 \
+--readFilesIn /home/juliasul/GenomeAnalysis/data/4_Tean_Teh_2017/transcriptome/trimmed/*_scaffold_11* \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc11/RNA_sc11_aligned\
+--outSAMtype BAM SortedByCoordinate \
+--outSAMunmapped Within \
+--outSAMattributes Standard \
+--readFilesCommand zcat

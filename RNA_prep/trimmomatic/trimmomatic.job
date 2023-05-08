@@ -1,0 +1,18 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 05:00:00
+#SBATCH -M snowy
+#SBATCH -J illumina_trimmomatic
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load trimmomatic
+
+cd /proj/genomeanalysis2023/nobackup/work/jusu_RNA/trimmomatic
+
+trimmomatic PE SRR6040095_scaffold_06.1.fastq.gz SRR6040095_scaffold_06.2.fastq.gz RNA_sc06.paired.forward.trimmed.fastq.gz RNA_sc06.unpaired.forward.trimmed.fastq.gz RNA_sc06.paired.reverse.trimmed.fastq.gz RNA_sc06.unpaired.reverse.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 MINLEN:36 
+trimmomatic PE SRR6040095_scaffold_10.1.fastq.gz SRR6040095_scaffold_10.2.fastq.gz RNA_sc10.paired.forward.trimmed.fastq.gz RNA_sc10.unpaired.forward.trimmed.fastq.gz RNA_sc10.paired.reverse.trimmed.fastq.gz RNA_sc10.unpaired.reverse.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 MINLEN:36
+trimmomatic PE SRR6040095_scaffold_11.1.fastq.gz SRR6040095_scaffold_11.2.fastq.gz RNA_sc11.paired.forward.trimmed.fastq.gz RNA_sc11.unpaired.forward.trimmed.fastq.gz RNA_sc11.paired.reverse.trimmed.fastq.gz RNA_sc11.unpaired.reverse.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 MINLEN:36

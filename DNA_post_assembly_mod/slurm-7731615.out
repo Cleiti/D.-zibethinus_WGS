@@ -1,0 +1,47 @@
+RepeatMasker version 4.1.2-p1
+Search Engine: NCBI/RMBLAST [ 2.11.0+ ]
+
+Using Master RepeatMasker Database: /sw/bioinfo/RepeatMasker/4.1.2-p1/rackham/Libraries/RepeatMaskerLib.h5
+  Title    : Dfam withRBRM
+  Version  : 3.4
+  Date     : 2021-07-21
+  Families : 326,778
+
+Species/Taxa Search:
+  Eukaryota [NCBI Taxonomy ID: 2759]
+
+  9 families in ancestor taxa; 326739 lineage-specific families
+
+Building species libraries in: /home/juliasul/.RepeatMaskerCache/CONS-Dfam_withRBRM_3.4/eukaryota
+
+analyzing file assembly_corrected_scaffold06.fasta
+
+Checking for E. coli insertion elements
+identifying Simple Repeats in batch 1 of 667
+identifying matches to eukaryota sequences in batch 1 of 667
+identifying Simple Repeats in batch 1 of 667
+
+Checking for E. coli insertion elements
+identifying Simple Repeats in batch 2 of 667
+identifying matches to eukaryota sequences in batch 2 of 667
+identifying Simple Repeats in batch 2 of 667
+
+Checking for E. coli insertion elements
+identifying Simple Repeats in batch 3 of 667
+identifying matches to eukaryota sequences in batch 3 of 667
+identifying Simple Repeats in batch 3 of 667
+
+Checking for E. coli insertion elements
+identifying Simple Repeats in batch 4 of 667
+identifying matches to eukaryota sequences in batch 4 of 667
+identifying Simple Repeats in batch 4 of 667
+
+Checking for E. coli insertion elements
+identifying Simple Repeats in batch 5 of 667
+identifying matches to eukaryota sequences in batch 5 of 667
+identifying Simple Repeats in batch 5 of 667
+
+Checking for E. coli insertion elements
+identifying Simple Repeats in batch 6 of 667
+identifying matches to eukaryota sequences in batch 6 of 667
+slurmstepd: error: *** JOB 7731615 ON s203 CANCELLED AT 2023-04-25T18:36:24 ***

@@ -1,0 +1,15 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 05:00:00
+#SBATCH -J bwa_mem
+#SBATCH -M snowy
+
+
+module load bioinfo-tools
+module load bwa
+
+bwa mem -t 10 /home/juliasul/GenomeAnalysis/DNA_post_assembly_mod/pacbioassembly.contigs.fasta /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold11.paired.forward.trimmed.fastq.gz  /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold11.paired.reverse.trimmed.fastq.gz > /proj/genomeanalysis2023/nobackup/work/jusu_bwa/aligned_scaffold11.sam
+
+

@@ -1,0 +1,18 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 25:00:00
+#SBATCH -J quast
+#SBATCH -M snowy
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load quast
+
+cd /proj/genomeanalysis2023/nobackup/work/jusu_quast
+
+quast.py -t 10 -e --circos -f -b assembly_corrected_scaffold06.fasta
+quast.py -t 10 -e --circos -f -b assembly_corrected_scaffold10.fasta
+quast.py -t 10 -e --circos -f -b assembly_corrected_scaffold11.fasta

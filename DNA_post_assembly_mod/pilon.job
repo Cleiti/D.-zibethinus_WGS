@@ -1,0 +1,16 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 15:00:00
+#SBATCH -J pilon
+#SBATCH -M snowy
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load Pilon
+
+cd /home/juliasul/GenomeAnalysis/DNA_post_assembly_mod/
+
+java -jar /sw/bioinfo/Pilon/1.24/rackham/pilon.jar --genome pacbioassembly_scaffold11.contigs.fasta --bam aligned_scaffold11_sorted.bam --output assembly_corrected_scaffold11 --outdir ./pilon_scaffold11 --vcf --threads 10

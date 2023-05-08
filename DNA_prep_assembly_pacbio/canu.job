@@ -1,0 +1,16 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH -t 28:00:00
+#SBATCH -J canu
+#SBATCH -M snowy
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools canu
+
+cd /proj/genomeanalysis2023/nobackup/work/jusu_canu/scaffold11
+canu -maxThreads=10 -useGrid=false -p pacbioassembly_scaffold11 -d . genomeSize=23775123 -pacbio SRR6037732_scaffold_11.fq.gz
+
+

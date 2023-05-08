@@ -1,0 +1,36 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 15:00:00
+#SBATCH -M snowy
+#SBATCH -J STAR_index
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load star
+
+cd  /proj/genomeanalysis2023/nobackup/work/jusu/jusu_quast/repeatmasker/scaffold06/
+
+STAR --runThreadN 10 \
+--runMode genomeGenerate \
+--genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc06 \
+--genomeFastaFiles assembly_corrected_scaffold06.fasta.masked \
+--genomeSAindexNbases 8
+
+cd  /proj/genomeanalysis2023/nobackup/work/jusu/jusu_quast/repeatmasker/scaffold10/
+
+STAR --runThreadN 10 \
+--runMode genomeGenerate \
+--genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 \
+--genomeFastaFiles assembly_corrected_scaffold10.fasta.masked \
+--genomeSAindexNbases 8
+
+cd  /proj/genomeanalysis2023/nobackup/work/jusu/jusu_quast/repeatmasker/scaffold11/
+
+STAR --runThreadN 10 \
+--runMode genomeGenerate \
+--genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc11 \
+--genomeFastaFiles assembly_corrected_scaffold11.fasta.masked \
+--genomeSAindexNbases 8

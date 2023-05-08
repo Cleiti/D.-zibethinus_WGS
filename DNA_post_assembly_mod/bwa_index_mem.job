@@ -1,0 +1,24 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 10:00:00
+#SBATCH -J bwa_index_mem
+#SBATCH -M snowy
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load bwa
+
+cd /home/juliasul/GenomeAnalysis/DNA_post_assembly_mod
+
+bwa index pacbioassembly_scaffold06.contigs.fasta
+bwa index pacbioassembly_scaffold10.contigs.fasta
+bwa index pacbioassembly_scaffold11.contigs.fasta
+
+bwa mem -t 10 pacbioassembly_scaffold06.contigs.fasta /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold06.paired.forward.trimmed.fastq.gz  /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold06.paired.reverse.trimmed.fastq.gz > /proj/genomeanalysis2023/nobackup/work/jusu_bwa/scaffold06/aligned_scaffold06.sam
+bwa mem -t 10 pacbioassembly_scaffold10.contigs.fasta /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold10.paired.forward.trimmed.fastq.gz  /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold10.paired.reverse.trimmed.fastq.gz > /proj/genomeanalysis2023/nobackup/work/jusu_bwa/scaffold10/aligned_scaffold10.sam
+bwa mem -t 10 pacbioassembly_scaffold11.contigs.fasta /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold11.paired.forward.trimmed.fastq.gz  /home/juliasul/GenomeAnalysis/DNA_prep_illumina/trimmomatic/illumina_scaffold11.paired.reverse.trimmed.fastq.gz > /proj/genomeanalysis2023/nobackup/work/jusu_bwa/scaffold11/aligned_scaffold11.sam
+
+

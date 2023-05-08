@@ -1,0 +1,36 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 10:00:00
+#SBATCH -J samtools
+#SBATCH -M snowy
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load samtools
+
+cd /proj/genomeanalysis2023/nobackup/work/jusu_bwa
+
+samtools view -S -@ 10 -b scaffold06/aligned_scaffold06.sam > aligned_scaffold06.bam
+samtools view -S -@ 10 -b scaffold10/aligned_scaffold10.sam > aligned_scaffold10.bam
+samtools view -S -@ 10 -b scaffold11/aligned_scaffold11.sam > aligned_scaffold11.bam
+
+cp ./*.bam /home/juliasul/GenomeAnalysis/DNA_post_assembly_mod/
+
+cd /home/juliasul/GenomeAnalysis/DNA_post_assembly_mod/
+
+samtools sort -o aligned_scaffold06_sorted.bam -@ 10 aligned_scaffold06.bam
+samtools sort -o aligned_scaffold10_sorted.bam -@ 10 aligned_scaffold10.bam
+samtools sort -o aligned_scaffold11_sorted.bam -@ 10 aligned_scaffold11.bam
+
+
+samtools index -@ 10 aligned_scaffold06_sorted.bam
+samtools index -@ 10 aligned_scaffold10_sorted.bam
+samtools index -@ 10 aligned_scaffold11_sorted.bam
+
+
+
+
+
