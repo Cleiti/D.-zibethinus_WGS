@@ -1,0 +1,63 @@
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040092_scaffold_10.1.fastq.gz SRR6040092_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.92/SRR_92_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:13:33 ..... started STAR run
+May 11 14:13:33 ..... loading genome
+May 11 14:13:34 ..... started mapping
+May 11 14:20:51 ..... finished mapping
+May 11 14:20:51 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040093_scaffold_10.1.fastq.gz SRR6040093_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.93/SRR_93_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:20:51 ..... started STAR run
+May 11 14:20:51 ..... loading genome
+May 11 14:20:52 ..... started mapping
+May 11 14:22:58 ..... finished mapping
+May 11 14:22:58 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040094_scaffold_10.1.fastq.gz SRR6040094_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.94/SRR_94_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:22:59 ..... started STAR run
+May 11 14:22:59 ..... loading genome
+May 11 14:22:59 ..... started mapping
+May 11 14:26:41 ..... finished mapping
+May 11 14:26:41 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040095_scaffold_10.1.fastq.gz SRR6040095_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.95/SRR_95_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:26:42 ..... started STAR run
+May 11 14:26:42 ..... loading genome
+May 11 14:26:43 ..... started mapping
+May 11 14:33:19 ..... finished mapping
+May 11 14:33:19 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040096_scaffold_10.1.fastq.gz SRR6040096_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.96/SRR_96_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:33:19 ..... started STAR run
+May 11 14:33:19 ..... loading genome
+May 11 14:33:19 ..... started mapping
+May 11 14:35:18 ..... finished mapping
+May 11 14:35:19 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040097_scaffold_10.1.fastq.gz SRR6040097_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.97/SRR_97_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:35:19 ..... started STAR run
+May 11 14:35:19 ..... loading genome
+May 11 14:35:19 ..... started mapping
+May 11 14:38:06 ..... finished mapping
+May 11 14:38:06 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6156066_scaffold_10.1.fastq.gz SRR6156066_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.66/SRR_66_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:38:06 ..... started STAR run
+May 11 14:38:07 ..... loading genome
+May 11 14:38:07 ..... started mapping
+May 11 14:41:11 ..... finished mapping
+May 11 14:41:11 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6156067_scaffold_10.1.fastq.gz SRR6156067_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.67/SRR_67_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:41:12 ..... started STAR run
+May 11 14:41:12 ..... loading genome
+May 11 14:41:12 ..... started mapping
+May 11 14:44:04 ..... finished mapping
+May 11 14:44:05 ..... finished successfully
+	STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6156069_scaffold_10.1.fastq.gz SRR6156069_scaffold_10.2.fastq.gz --outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.69/SRR_69_sc10_aligned--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-10-20T18:01:41+0200 rackham5.uppmax.uu.se:/sw/bioinfo/star/2.7.9a/src/STAR-2.7.9a/source
+May 11 14:44:05 ..... started STAR run
+May 11 14:44:05 ..... loading genome
+May 11 14:44:05 ..... started mapping
+May 11 14:48:00 ..... finished mapping
+May 11 14:48:00 ..... finished successfully

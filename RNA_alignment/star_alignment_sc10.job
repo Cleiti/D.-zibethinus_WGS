@@ -1,0 +1,50 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 05:00:00
+#SBATCH -M snowy
+#SBATCH -J STAR_align_sc10
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load star
+
+cd /home/juliasul/GenomeAnalysis/data/4_Tean_Teh_2017/transcriptome/trimmed
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040092_scaffold_10.1.fastq.gz SRR6040092_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.92/SRR_92_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040093_scaffold_10.1.fastq.gz SRR6040093_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.93/SRR_93_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040094_scaffold_10.1.fastq.gz SRR6040094_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.94/SRR_94_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040095_scaffold_10.1.fastq.gz SRR6040095_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.95/SRR_95_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040096_scaffold_10.1.fastq.gz SRR6040096_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.96/SRR_96_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6040097_scaffold_10.1.fastq.gz SRR6040097_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.97/SRR_97_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6156066_scaffold_10.1.fastq.gz SRR6156066_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.66/SRR_66_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6156067_scaffold_10.1.fastq.gz SRR6156067_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.67/SRR_67_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat
+
+STAR --genomeDir /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/genomeindex/sc10 --runThreadN 10 --readFilesIn SRR6156069_scaffold_10.1.fastq.gz SRR6156069_scaffold_10.2.fastq.gz \
+--outFileNamePrefix /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/sc10/SRR.69/SRR_69_sc10_aligned\
+--outSAMtype BAM SortedByCoordinate --outSAMunmapped Within --outSAMattributes Standard --readFilesCommand zcat

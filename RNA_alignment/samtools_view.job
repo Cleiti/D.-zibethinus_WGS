@@ -1,0 +1,44 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 3
+#SBATCH	-t 03:00:00
+#SBATCH -J samtools_view
+#SBATCH -M snowy
+
+
+module load bioinfo-tools
+module load samtools
+
+cd  /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align
+
+samtools view -S -b sc06/SRR.66/SRR_66_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_66_sc06.bam
+samtools view -S -b sc06/SRR.67/SRR_67_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_67_sc06.bam
+samtools view -S -b sc06/SRR.69/SRR_69_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_69_sc06.bam
+samtools view -S -b sc06/SRR.92/SRR_92_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_92_sc06.bam
+samtools view -S -b sc06/SRR.93/SRR_93_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_93_sc06.bam
+samtools view -S -b sc06/SRR.94/SRR_94_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_94_sc06.bam
+samtools view -S -b sc06/SRR.95/SRR_95_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_95_sc06.bam
+samtools view -S -b sc06/SRR.96/SRR_96_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_96_sc06.bam
+samtools view -S -b sc06/SRR.97/SRR_97_sc06_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_97_sc06.bam
+
+samtools view -S -b sc10/SRR.66/SRR_66_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_66_sc10.bam
+samtools view -S -b sc10/SRR.67/SRR_67_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_67_sc10.bam
+samtools view -S -b sc10/SRR.69/SRR_69_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_69_sc10.bam
+samtools view -S -b sc10/SRR.92/SRR_92_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_92_sc10.bam
+samtools view -S -b sc10/SRR.93/SRR_93_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_93_sc10.bam
+samtools view -S -b sc10/SRR.94/SRR_94_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_94_sc10.bam
+samtools view -S -b sc10/SRR.95/SRR_95_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_95_sc10.bam
+samtools view -S -b sc10/SRR.96/SRR_96_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_96_sc10.bam
+samtools view -S -b sc10/SRR.97/SRR_97_sc10_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_97_sc10.bam
+
+samtools view -S -b sc11/SRR.66/SRR_66_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_66_sc11.bam
+samtools view -S -b sc11/SRR.67/SRR_67_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_67_sc11.bam
+samtools view -S -b sc11/SRR.69/SRR_69_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_69_sc11.bam
+samtools view -S -b sc11/SRR.92/SRR_92_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_92_sc11.bam
+samtools view -S -b sc11/SRR.93/SRR_93_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_93_sc11.bam
+samtools view -S -b sc11/SRR.94/SRR_94_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_94_sc11.bam
+samtools view -S -b sc11/SRR.95/SRR_95_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_95_sc11.bam
+samtools view -S -b sc11/SRR.96/SRR_96_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_96_sc11.bam
+samtools view -S -b sc11/SRR.97/SRR_97_sc11_aligned--outSAMtypeAligned.out.sam > /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/SRR_97_sc11.bam
+
