@@ -10,3 +10,7 @@ The following document describes the detailed workflow and results of the analys
 ## Workflow
 
 ![Untitled Diagram (2)](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/0ad68d07-3566-461c-b2d4-935b4b898c95)
+
+### Short reads preprocessing
+
+Raw illumina reads, both genomic and transcriptomic, were Quality Controlled, trimmed, and Quality Controlled again. The programs used were FastQC and Trimmomatic. The code for these jobs can be found in folders "
