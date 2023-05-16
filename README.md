@@ -13,4 +13,12 @@ The following document describes the detailed workflow and results of the analys
 
 ### Short reads preprocessing
 
-Raw illumina reads, both genomic and transcriptomic, were Quality Controlled, trimmed, and Quality Controlled again. The programs used were FastQC and Trimmomatic. The code for these jobs can be found in folders "
+Raw illumina reads, both genomic and transcriptomic, were Quality Controlled, trimmed, and Quality Controlled again. The programs used were FastQC and Trimmomatic. The code for these jobs can be found in folders "DNA_prep_illumina" and "RNA_prep". Transcriptome reads from only one experiment (SRR6040095) needed trimming, and the rest were left unchanged.
+
+The genomic reads passed QC well, while transcriptomic reads did not (both before and after trimming), failing among others in metrics of overrepresenteed sequences and per sequence GC content. The analysis was nevertheless continued with the same data.
+
+### Initial assembly
+
+The initial assembly was made using long genomic PacBio reads. No initial preprocessing was made, because the assembly software used - Canu - includes a QC. The code for this job can be found in folder "DNA_prep_assembly_pacbio".
+
+### 
