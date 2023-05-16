@@ -7,4 +7,4 @@ For project notebook with recorded progress, use the following link: https://col
 
 ## Workflow
 
-![Untitled Diagram (1)](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/ecd8a3d5-cb4b-4a7b-a183-e29b4ed532a1)
+![Untitled Diagram (2)](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/0ad68d07-3566-461c-b2d4-935b4b898c95)
