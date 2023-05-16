@@ -1,0 +1,21 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 3
+#SBATCH	-t 05:00:00
+#SBATCH -M snowy
+#SBATCH -J htseq_sc10
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load htseq
+
+bam=/proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles/bamfiles_sorted
+gtf=/proj/genomeanalysis2023/nobackup/work/jusu/jusu_braker/sc10/braker/Sp_4/GeneMark-ET
+
+htseq-count -f bam -r pos \
+$bam/SRR_66_sc10.bam $bam/SRR_67_sc10.bam $bam/SRR_69_sc10.bam $bam/SRR_92_sc10.bam $bam/SRR_93_sc10.bam $bam/SRR_94_sc10.bam $bam/SRR_95_sc10.bam $bam/SRR_96_sc10.bam $bam/SRR_97_sc10.bam \
+$gtf/genemark.gtf > /home/juliasul/GenomeAnalysis/count_features/sc10_count.txt
+ 
+
