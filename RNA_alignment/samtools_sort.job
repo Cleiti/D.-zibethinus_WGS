@@ -1,0 +1,49 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 3
+#SBATCH	-t 03:00:00
+#SBATCH -J samtools_sort
+#SBATCH -M snowy
+
+
+module load bioinfo-tools
+module load samtools
+
+cd /proj/genomeanalysis2023/nobackup/work/jusu/jusu_STAR/align/bamfiles
+
+samtools sort -o bamfiles_sorted/SRR_66_sc06.bam SRR_66_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_66_sc10.bam SRR_66_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_66_sc11.bam SRR_66_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_67_sc06.bam SRR_67_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_67_sc10.bam SRR_67_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_67_sc11.bam SRR_67_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_69_sc06.bam SRR_69_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_69_sc10.bam SRR_69_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_69_sc11.bam SRR_69_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_92_sc06.bam SRR_92_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_92_sc10.bam SRR_92_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_92_sc11.bam SRR_92_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_93_sc06.bam SRR_93_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_93_sc10.bam SRR_93_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_93_sc11.bam SRR_93_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_94_sc06.bam SRR_94_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_94_sc10.bam SRR_94_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_94_sc11.bam SRR_94_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_95_sc06.bam SRR_95_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_95_sc10.bam SRR_95_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_95_sc11.bam SRR_95_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_96_sc06.bam SRR_96_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_96_sc10.bam SRR_96_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_96_sc11.bam SRR_96_sc11.bam
+
+samtools sort -o bamfiles_sorted/SRR_97_sc06.bam SRR_97_sc06.bam
+samtools sort -o bamfiles_sorted/SRR_97_sc10.bam SRR_97_sc10.bam
+samtools sort -o bamfiles_sorted/SRR_97_sc11.bam SRR_97_sc11.bam

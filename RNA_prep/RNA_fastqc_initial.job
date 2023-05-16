@@ -1,0 +1,20 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2023-2-8
+#SBATCH -p core
+#SBATCH -n 10
+#SBATCH	-t 05:00:00
+#SBATCH -M snowy
+#SBATCH -J fastQC_initial_repeat_RNA
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=julia.sulyaeva.2968@student.uu.se
+
+module load bioinfo-tools
+module load FastQC
+
+cd /proj/genomeanalysis2023/Genome_Analysis/4_Tean_Teh_2017/transcriptome/trimmed/
+
+fastqc -o /home/juliasul/GenomeAnalysis/RNA_prep/fastQC_initial/fastqc_initial_repeat -t 10 *
+
+cd /proj/genomeanalysis2023/Genome_Analysis/4_Tean_Teh_2017/transcriptome/untrimmed/
+
+fastqc -o /home/juliasul/GenomeAnalysis/RNA_prep/fastQC_initial/fastqc_initial_repeat -t 10 *
