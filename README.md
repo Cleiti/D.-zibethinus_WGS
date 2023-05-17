@@ -1,5 +1,5 @@
 # D.zibethinus_WGS
-Replication of WGS analysis of Durian, from paper by Teh et. al. (doi:10.1038/ng.3972). Course project in Genome Analysis 2023, Uppsala University.
+Replication of WGS analysis of Durian, from article by Teh et. al., 2017 (doi:10.1038/ng.3972). Course project in Genome Analysis 2023, Uppsala University.
 
 For Project plan and aim, see Wiki
 
@@ -14,6 +14,21 @@ The following document describes the detailed workflow and results of the analys
 ### Raw data
 
 This project used three kinds of input raw data: genomic short Illumina reads and genomic long PacBio reads, as well as transcriptomic short Illumina reads. All the input files were in **.fq.gz** format
+
+The given input data belonged to three different scaffolds (6, 10 and 11). All analyses up to feature counting are performed for all three of these scaffolds, using either separate code files or one for all. For the last two steps of the analysis, due to lack of time, only results from scaffold 10 are used.
+
+The reads represent nine different combinations cultivar and plant organ, corresponding to a specific experiment ID. These are presented below:
+
+Experiment ID cultivar  plant organ
+SRR6040092  Musang King leaf
+SRR6040093  Musang King root
+SRR6040094  Musang King aril
+SRR6040095  Musang King aril
+SRR6040096  Musang King stem
+SRR6040097  Musang King aril
+SRR6156066  Monthong  aril
+SRR6156067  Monthong  aril
+SRR6156069  Monthong  aril
 
 ### Short reads preprocessing
 
@@ -33,5 +48,12 @@ The initial assembly was subsequently corrected with the alignment using softwar
 
 The code for these jobs can be found in folder "DNA_post_assembly_pacbio".
 
-### 
+### Genome annotation
+
+The transcriptome reads were aligned (splice-aware) to the final genome assembly using **STAR**, and the alignment file was compressed, sorted and indexed using **SAMtools** as in the previous step. Next, the final genome was annotated using the alignment files, with software **BRAKER**. This produced feature files in **.gtf** and **.gff** formats. The code for these jobs can be found in folder "RNA_alignment" and "DNA_annotation". 
+
+### Feature counting and differential expression analysis
+
+Genomic features were counted from the **.gtf** file using **HTseq**, and the resulting count file was used for expression comparison between the different cultivars and plant organs using R package **DEseq2**. 
+
 
