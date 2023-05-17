@@ -20,15 +20,15 @@ The given input data belonged to three different scaffolds (6, 10 and 11). All a
 The reads represent nine different combinations cultivar and plant organ, corresponding to a specific experiment ID. These are presented below:
 
 Experiment ID cultivar  plant organ
-SRR6040092  Musang King leaf
-SRR6040093  Musang King root
-SRR6040094  Musang King aril
-SRR6040095  Musang King aril
-SRR6040096  Musang King stem
-SRR6040097  Musang King aril
-SRR6156066  Monthong  aril
-SRR6156067  Monthong  aril
-SRR6156069  Monthong  aril
+- SRR6040092  Musang King leaf
+- SRR6040093  Musang King root
+- SRR6040094  Musang King aril
+- SRR6040095  Musang King aril
+- SRR6040096  Musang King stem
+- SRR6040097  Musang King aril
+- SRR6156066  Monthong  aril
+- SRR6156067  Monthong  aril
+- SRR6156069  Monthong  aril
 
 ### Short reads preprocessing
 
