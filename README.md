@@ -75,7 +75,7 @@ Heatmap for for expression analysis between cultivars:
 MA-plot for expression analysis between plant organs: 
 ![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/96ac5e99-dd83-4948-8968-83bf48006340)
 
-PCA-plot for for expression analysis between plant organs: 
+PCA-plot for for expression analysis between plant organs:
 ![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/dc76db92-c935-41f2-ad4d-41f0acb3dbfc)
 
 Heatmap for for expression analysis between plant organs: 
