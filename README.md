@@ -64,7 +64,7 @@ Genomic features were counted from the **.gtf** file using **HTseq**, and the re
 
 MA-plot for expression analysis between cultivars: 
 ![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/67e882da-40fe-4c63-833a-a10b17577ad2)
-In the plot, each dot represents a gene and red dots specifically represent genes with p-value > 0.1. The y-axis is -- and x-axis shows average expression in all samples. The plot suggests quite high differences in expression patterns between the two cultivars, and also has interestingly straight lines in the left corner, which is not exactly normal for this kind of plots. The values are not either evenly dispersed in relation to the x-axis.
+In the plot, each dot represents a gene and red dots specifically represent genes with p-value > 0.1. The y-axis is -- and x-axis shows average expression in all samples. The plot suggests quite high differences in expression patterns between the two cultivars, and also has interestingly straight lines in the left corner, which is not exactly normal for this kind of plots. The values are not either evenly dispersed in relation to the x-axis. Similar conclusions are true about the MA-plot for the plant organs expressions, below.
 
 PCA-plot for for expression analysis between cultivars: 
 ![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/4561cd87-0355-4d9b-b81f-33064ed92ddb)
