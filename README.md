@@ -19,9 +19,8 @@ This project used three kinds of input raw data: genomic short Illumina reads an
 
 The given input data belonged to three different scaffolds (6, 10 and 11). All analyses up to feature counting are performed for all three of these scaffolds, using either separate code files or one for all. For the last two steps of the analysis, due to lack of time, only results from scaffold 10 are used.
 
-The reads represent nine different combinations cultivar and plant organ, corresponding to a specific experiment ID. These are presented below:
+The reads represent nine different combinations of two plant cultivara (Musang King or Monthong) and four plant organs, corresponding to a specific experiment ID. These are presented below:
 
-Experiment ID cultivar  plant organ
 - SRR6040092  Musang King leaf
 - SRR6040093  Musang King root
 - SRR6040094  Musang King aril
