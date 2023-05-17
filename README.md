@@ -60,6 +60,27 @@ The transcriptome reads were aligned (splice-aware) to the final genome assembly
 
 ### Feature counting and differential expression analysis
 
-Genomic features were counted from the **.gtf** file using **HTseq**, and the resulting count file was used for expression comparison between the different cultivars and plant organs using R package **DEseq2**. 
+Genomic features were counted from the **.gtf** file using **HTseq**, and the resulting count file was used for expression comparison between the different cultivars and different plant organs using R package **DEseq2**.  For each analysis, three graphs were created to represent the result: an MA-plot, PCA-plot and an expression heatmap. Due to lack of time, names of the most expressed genes were not able to be retrieved via **eggNOGmapper** and were instead borrowed from a classmate working on the same project. These are the gene names used in heatmaps.
 
+MA-plot for expression analysis between cultivars: 
+![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/67e882da-40fe-4c63-833a-a10b17577ad2)
+In the plot, each dot represents a gene and red dots specifically represent genes with p-value > 0.1. The y-axis is -- and x-axis shows average expression in all samples. The plot suggests quite high differences in expression patterns between the two cultivars, and also has interestingly straight lines in the left corner, which is not exactly normal for this kind of plots. The values are not either evenly dispersed in relation to the x-axis.
+
+PCA-plot for for expression analysis between cultivars: 
+![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/4561cd87-0355-4d9b-b81f-33064ed92ddb)
+
+Heatmap for for expression analysis between cultivars: 
+![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/4d6af4f4-bf30-47a4-beb8-65e5fa58da36)
+
+MA-plot for expression analysis between plant organs: 
+![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/96ac5e99-dd83-4948-8968-83bf48006340)
+
+PCA-plot for for expression analysis between plant organs: 
+![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/dc76db92-c935-41f2-ad4d-41f0acb3dbfc)
+
+Heatmap for for expression analysis between plant organs: 
+![image](https://github.com/Cleiti/D.zibethinus_WGS/assets/52427029/5b1a6542-8c1d-4335-8780-96d240d0bbb4)
+
+## Conclusions
+Genome assembly results are good. However, the results of the expression analysis are less satisfactory. The expresison heatmaps show much larger difference between different cultivars than plant organs, which is the opposite of the expected result, since dofferent plant organs have drastic functional differences, unlike different cultivars. The best option would be redoing differential expression analysis with more time, and preferably checking the quality of annotation results.
 
